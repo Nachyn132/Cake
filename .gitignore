@@ -1,30 +1,30 @@
-# Создано с помощью https://www.toptal.com/developers/gitignore/api/windows
-# Отредактируйте на https://www.toptal.com/developers/gitignore?templates=windows
+# Created by https://www.toptal.com/developers/gitignore/api/windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows
 
 ### Windows ###
-# Файлы кэша миниатюр Windows
+# Windows thumbnail cache files
 Thumbs.db
-Thumbs.db: шифруемый
+Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
-# Файл дампа
+# Dump file
 *.stackdump
 
-# Файл конфигурации папки
+# Folder config file
 [Dd]esktop.ini
 
-# Корзина, используемая для общих файловых ресурсов
+# Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-# Файлы установщика Windows
+# Windows Installer files
 *.cab
 *.msi
 *.msix
 *.msm
 *.msp
 
-# Ярлыки Windows
+# Windows shortcuts
 *.lnk
 
-# Конец https://www.toptal.com/developers/gitignore/api/windows
+# End of https://www.toptal.com/developers/gitignore/api/windows
