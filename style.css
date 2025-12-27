@@ -49,15 +49,120 @@
 }
 
 #main {
-    border: 2px solid silver;
-    height: 500px;
+    border: 2px solid rgb(97, 255, 145);
+    border-radius: 30px;
     margin-left: 20%;
     margin-right: 20%;
+    padding: 15px;
+}
+
+#main hr {
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 2px solid rgb(97, 255, 145);
 }
 
 #footer {
     border-top: 5px solid rgb(61, 161, 91);
     border-bottom: none;
-    margin-bottom: none;
+    margin-bottom: 0;
     margin-top: 25px;
 }
+
+
+
+.cards {
+  display: grid;
+  /* Автоматически заполняем на всю ширину grid-контейнера */
+  grid-template-columns: repeat(auto-fill, 250px);
+  width: 100%;
+  max-width: 1000px; /* Ширина grid-контейнера */
+  justify-content: center;
+  justify-items: center; /* Размещаем карточку по центру */
+  column-gap: 100px; /* Отступ между колонками */
+  row-gap: 40px; /* Отступ между рядами */
+  margin: 0 auto;
+}
+
+/* Общие стили для карточек */
+.product-card {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Стили для изображения */
+.product-card__image {
+    position: relative;
+    margin: 0;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product-card__image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-card__image img {
+transform: scale(1.05);
+}
+
+/* Стили для контента */
+.product-card__content {
+padding: 16px;
+}
+
+.product-card__title {
+margin: 0 0 8px;
+font-size: 18px;
+font-weight: 600;
+color: #333333;
+}
+
+.product-card__description {
+margin: 0 0 16px;
+font-size: 14px;
+color: #666666;
+line-height: 1.4;
+}
+
+/* Стили для футера карточки */
+.product-card__footer {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 16px;
+}
+
+.product-card__price {
+font-size: 20px;
+font-weight: 700;
+color: #222222;
+}
+
+.product-card__button {
+padding: 8px 16px;
+border: none;
+border-radius: 4px;
+background-color: #4CAF50;
+color: white;
+font-weight: 600;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.product-card__button:hover {
+background-color: #45a049;
+}
+
