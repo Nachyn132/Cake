@@ -8,19 +8,19 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <div id="header">
+        <header id="header">
             <p id="logo"><span>Loma</span> Cake</p>
 
-            <a href="">Главная</a>
-            <a href="">Торты</a>
-            <a href="">Трайфлы</a>
-            <a href="">Капкейки</a>
+            <a href="#header" class="nav">Главная</a>
+            <a href="#cakes" class="nav">Торты</a>
+            <a href="#trifles" class="nav">Трайфлы</a>
+            <a href="#cupcakes" class="nav">Капкейки</a>
 
             <p id="number_phone"><i class='bx bxs-phone-call' id="bxs-phone"></i>+79439463374</p>
-            <p><i class='bx bxl-telegram' ></i></p>
-        </div>
-        <div id="main">
-            <h1>Торты</h1><hr>
+            <a href=""><i class='bx bxl-telegram' ></i></a>
+        </header>
+        <main id="main">
+            <h1 id="cakes">Торты</h1><hr>
 
             <dialog id="closeMe" aria-labelledby="heading">
                 <h2 id="heading">Закрой меня! 🙏</h2>
@@ -115,7 +115,7 @@
                 <button class="next-btn">Показать ещё</button>
             </div>
 
-            <h1>Трайфлы</h1><hr>
+            <h1 id="trifles">Трайфлы</h1><hr>
             <div class="cards">
                 <article class="product-card">
                     <figure class="product-card__image">
@@ -201,7 +201,7 @@
                 <button class="next-btn">Показать ещё</button>
             </div>
 
-            <h1>Капкейки</h1><hr>
+            <h1 id="cupcakes">Капкейки</h1><hr>
             <div class="cards">
                 <article class="product-card">
                     <figure class="product-card__image">
@@ -286,9 +286,9 @@
             <div class="next">
                 <button class="next-btn">Показать ещё</button>
             </div>
-        </div>
-        <div id="footer">
+        </main>
+        <footer id="footer">
             <p id="logo"><span>Loma</span> Cake</p>
-        </div>
+        </footer>
     </body>
 </html>
